@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="assets/css/servies.css" />
+  <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+  <title>FrontEnders - Serviço</title>
+</head>
+
+<body>
+  <!--Configuração de menu padrão NÃO ALTERAR-->
+  <header>
+    <nav class="nav-bar">
+      <div class="logo">
+        <h1>FrontEnders</h1>
+      </div>
+      <div class="nav-list">
+        <ul>
+          <li class="nav-item"><a href="index.html" class="nav-link">Início</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link">Contatos</a></li>
+          <li class="nav-item"><a href="list.html" class="nav-link">Lista</a></li>
+          <li class="nav-item"><a href="sigin.html" class="nav-link">Cadastro</a></li>
+        </ul>
+      </div>
+      <div class="login-button">
+        <button><a href="login.html">Login</a></button>
+      </div>
+      <!--INTERAÇÃO PARA NAVEGAÇÃO RESPONSIVA-->
+      <div class="mobile-menu-icon">
+        <button onclick="menuShowPages()">
+          <img class="icon" src="assets/img/menu_white_36dp.svg" alt="" />
+        </button>
+      </div>
+    </nav>
+    <div class="mobile-menu">
+      <ul>
+        <li class="nav-item"><a href="index.html" class="nav-link">Início</a></li>
+        <li class="nav-item"><a href="contact.html" class="nav-link">Contatos</a></li>
+        <li class="nav-item"><a href="list.html" class="nav-link">Lista</a></li>
+        <li class="nav-item"><a href="sigin.html" class="nav-link">Cadastro</a></li>
+      </ul>
+
+      <div class="login-button">
+        <button><a href="login.html">Login</a></button>
+      </div>
+    </div>
+    <!--INTERAÇÃO PARA NAVEGAÇÃO RESPONSIVA-->
+  </header>
+    <main>
+      <div class="container">
+        <div class="top">
+          <h1 class="tituloSecundario">Planos e preços</h1>
+          <div class="toggle-btn">
+            <span style="margin: 0.8em;">Anual</span>
+            <label class="switch">
+              <input type="checkbox" id="checbox" onclick="check()" ; />
+              <span class="slider round"></span>
+            </label>
+            <span style="margin: 0.8em;">Mensal</span></div>
+        </div>
+    
+        <div class="package-container">
+          <div class="packages">
+            <h1 class="tituloSecundario">Básico</h1>
+            <h2 class="text1">R$19.99</h2>
+            <h2 class="text2">R$199.99</h2>
+            <ul class="list">
+              <li class="first">Layouts</li>
+              <li>Editor de imagens</li>
+              <li>Gerador de códigos</li>
+              <li>Suporte por email</li>
+            </ul>
+            <a href="/sigin.html" class="button button1">Assinar</a>
+          </div>
+          <div class="packages">
+            <h1 class="tituloSecundario">Pro</h1>
+            <h2 class="text1">R$29.99</h2>
+            <h2 class="text2">R$299.99</h2>
+            <ul class="list">
+              <li class="first">Básico e +</li>
+              <li>Layouts prontos</li>
+              <li>Biblioteca de imagens</li>
+              <li>Suporte chat premium</li>
+            </ul>
+            <a href="/sigin.html" class="button button2">Assinar</a>
+          </div>
+          <div class="packages">
+            <h1 class="tituloSecundario">Master</h1>
+            <h2 class="text1">R$49.99</h2>
+            <h2 class="text2">R$499.99</h2>
+            <ul class="list">
+              <li class="first">Professional e +</li>
+              <li>Marketing Automatizado</li>
+              <li>Instagram Ads</li>
+              <li>Facebook Ads</li>
+            </ul>
+            <a href="/sigin.html" class="button button3">Assinar</a>
+          </div>
+        </div>
+      </div>
+    </main>
+  <script src="assets/js/script.js"></script>
+</body>
+<!--Configuração de menu padrão NÃO ALTERAR-->
+<footer class="footer">
+  <div class="footer__addr">
+    <h1 class="footer__logo">FrontEnders</h1>
+
+    <h2>Contato</h2>
+
+    <address>
+      R. Emíliano Felipe, 173 - Irajá, Rio de Janeiro - RJ, 21230-145<br />
+      <a class="footer__btn" href="mailto:example@gmail.com">Fale conosco</a>
+    </address>
+  </div>
+
+  <ul class="footer__nav">
+    <li class="nav__item">
+      <h2 class="nav__title">Media</h2>
+      <ul class="nav__ul">
+        <li><a href="https://github.com">Github</a></li>
+        <li><a href="https://linkedin.com">Linkedin</a></li>
+      </ul>
+    </li>
+    <div class="legal">
+      <p>&copy; FrontEnders. All rights reserved</p>
+    </div>
+  </ul>
+</footer>
+<!--Configuração de menu padrão NÃO ALTERAR-->
+
+</html>
