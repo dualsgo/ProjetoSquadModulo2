@@ -264,14 +264,17 @@ FOOTER BASEADO EM ARTIGO EM BLOG - DAQUI PARA CIMA É CONFIGURAÇÃO DO FOOTER
 
 .content {
   position: relative;
-  background: #fff url(/assets/img/homebg.svg) 50% 50%;
+  background: #fff url(/assets/img/homebg.png) 50% 50%;
   background-size: contain;
   background-repeat: no-repeat;
   flex: 1;
   text-align: center;
   padding: 15rem;
 }
-.content1, .content2, .content4 {
+
+.content1,
+.content2,
+.content4 {
   position: relative;
   background: #fff 50% 50%;
   background-size: contain;
@@ -280,18 +283,20 @@ FOOTER BASEADO EM ARTIGO EM BLOG - DAQUI PARA CIMA É CONFIGURAÇÃO DO FOOTER
   text-align: center;
   padding: 1rem;
 }
+
 .content3 {
   position: relative;
-  background: #fff url(/assets/img/homebg2.gif) 50% 50%;
+  background: #fff url(/assets/img/homebg.png) 50% 50%;
   background-size: contain;
   background-repeat: no-repeat;
   flex: 1;
   text-align: center;
   padding: 15rem;
 }
+
 .content5 {
   position: relative;
-  background: #fff url(/assets/img/homebg3.png) 50% 50%;
+  background: #fff url(/assets/img/homebg.png) 50% 50%;
   background-size: contain;
   background-repeat: no-repeat;
   flex: 1;
@@ -299,4 +304,3 @@ FOOTER BASEADO EM ARTIGO EM BLOG - DAQUI PARA CIMA É CONFIGURAÇÃO DO FOOTER
   padding: 15rem;
   margin-top: 50px;
 }
-

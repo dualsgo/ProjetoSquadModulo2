@@ -24,8 +24,6 @@ function menuShowPages() {
 }
 
 /////////////////////////////////////////////////
-
-
 function limpa_formulário_cep() {
     //Limpa valores do formulário de cep.
     document.getElementById('rua').value = ("");
@@ -111,3 +109,8 @@ function limpa_formulário_cep() {
   }
   check();
   
+  // Script do cadastro /////////////////////////////////////////////////////////////
+
+  function mensagemCadastro() {
+    alert("Você receberá as instruções para finalizar o cadastro no email informado");
+  }
