@@ -8,7 +8,6 @@
   <link rel="stylesheet" href="assets/css/list.css" />
   <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
   <title>FrontEnders - LIsta de espera</title>
- 
 </head>
 
 <body>
@@ -59,23 +58,36 @@
     Formulario deve conter no mínimo:
   Nome, Sobrenome, Telefone, Email, API VIA CEP para o endereço e botão de enviar com alguma interação. Pode ser ALERT -->
     <!-- Inicio do formulario -->
+    <h2 id="tituloLista">Lista de espera</h2>
+    <p>Preencha a lista com seus dados e aguarde o contato de um de nossos colaboradores!</p>
     <form method="get" action=".">
-      
-      <label>Cep:
-      <input name="cep" type="text" id="cep" value="" size="10" maxlength="9"
-             onblur="pesquisacep(this.value);" /></label><br />
-      <label>Rua:
-      <input name="rua" type="text" id="rua" size="60" /></label><br />
-      <label>Bairro:
-      <input name="bairro" type="text" id="bairro" size="40" /></label><br />
-      <label>Cidade:
-      <input name="cidade" type="text" id="cidade" size="40" /></label><br />
-      <label>Estado:
-      <input name="uf" type="text" id="uf" size="2" /></label><br />
-      <label>IBGE:
-      <input name="ibge" type="text" id="ibge" size="8" /></label><br />
+      <fieldset>
+        <legend>Dados pessoais</legend>
+        <label for="">Nome<input type="text"></label>
+        <label for="">Sobrenome<input type="text"></label>
+        <label for="">Telefone<input type="tel" name="" id=""></label>
+        <label for="">Email<input type="email" name="" id=""></label>
+      </fieldset>
+      <fieldset>
+        <legend>Endereço</legend>
+        <label>Cep:
+          <input name="cep" type="text" id="cep" value=""  maxlength="9"
+            onblur="pesquisacep(this.value);" /></label><br />
+        <label>Rua:
+          <input name="rua" type="text" id="rua"/></label><br />
+        <label>Bairro:
+          <input name="bairro" type="text" id="bairro"  /></label><br />
+        <label>Cidade:
+          <input name="cidade" type="text" id="cidade"  /></label><br />
+        <label>Estado:
+          <input name="uf" type="text" id="uf"  /></label><br />
+        <label>IBGE:
+          <input name="ibge" type="text" id="ibge" /></label><br />
+      </fieldset>
+      <button id="btnEnviar" type="submit" name="enviar_formulario" id="enviar" onclick="mensagemLista()">
+        <p>Enviar</p>
+       </button>
     </form>
-  </div>
   </main>
   <!--Conteúdo do site ficará em MAIN-->
   <script src="assets/js/script.js"></script>

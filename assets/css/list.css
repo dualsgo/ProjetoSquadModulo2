@@ -250,7 +250,8 @@ header {
   }
 }
 
-form {padding: 40px;
+form {
+  padding: 40px;
   margin: 100px;
   text-align: center;
   border: solid;
@@ -260,6 +261,37 @@ form {padding: 40px;
 
 input,
 label {
-  margin: 5px;
-  padding: 5px;
+  margin: .5em;
+  padding: .5em;
+}
+
+fieldset {
+  display:
+    flex;
+  flex-wrap: wrap;
+}
+
+#tituloLista {
+  text-transform: uppercase bold;
+  color: #0187a7;
+  font-size: 3rem;
+}
+
+#tituloLista,
+p {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: .5em;
+  margin: .5em;
+}
+
+button {
+  margin-top: 2em;
+  padding: 0 2em 0 2em;
+}
+
+button p {
+  font-size: 1em;
+  color: #0187a7;
 }
