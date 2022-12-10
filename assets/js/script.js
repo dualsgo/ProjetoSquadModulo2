@@ -24,7 +24,10 @@ function menuShowPages() {
 }
 
 /////////////////////////////////////////////////
+<<<<<<< HEAD
 
+=======
+>>>>>>> 3a63cf8f67cd804041979a605e8303a1655cf673
 function limpa_formulário_cep() {
   //Limpa valores do formulário de cep.
   document.getElementById("rua").value = "";
@@ -111,8 +114,74 @@ function mensagemLista() {
   alert("Entraremos em contato!");
 }
 
+<<<<<<< HEAD
 function mensagemRecupera() {
   alert(
     "Enviamos as instruções para recuperação de senha para o emial cadastrado!"
   );
 }
+=======
+    //Nova letiável "cep" somente com dígitos.
+    let cep = valor.replace(/\D/g, '');
+
+    //Verifica se campo cep possui valor informado.
+    if (cep != "") {
+
+      //Expressão regular para validar o CEP.
+      let validacep = /^[0-9]{8}$/;
+
+      //Valida o formato do CEP.
+      if (validacep.test(cep)) {
+
+        //Preenche os campos com "..." enquanto consulta webservice.
+        document.getElementById('rua').value = "...";
+        document.getElementById('bairro').value = "...";
+        document.getElementById('cidade').value = "...";
+        document.getElementById('uf').value = "...";
+        document.getElementById('ibge').value = "...";
+
+        //Cria um elemento javascript.
+        let script = document.createElement('script');
+
+        //Sincroniza com o callback.
+        script.src = 'https://viacep.com.br/ws/' + cep + '/json/?callback=meu_callback';
+
+        //Insere script no documento e carrega o conteúdo.
+        document.body.appendChild(script);
+
+      } //end if.
+      else {
+        //cep é inválido.
+        limpa_formulário_cep();
+        alert("Formato de CEP inválido.");
+      }
+    } //end if.
+    else {
+      //cep sem valor, limpa formulário.
+      limpa_formulário_cep();
+    }
+  };
+
+  function check() {
+    let checkBox = document.getElementById("checbox");
+    let text1 = document.getElementsByClassName("text1");
+    let text2 = document.getElementsByClassName("text2");
+  
+    for (let i = 0; i < text1.length; i++) {
+      if (checkBox.checked == true) {
+        text1[i].style.display = "block";
+        text2[i].style.display = "none";
+      } else if (checkBox.checked == false) {
+        text1[i].style.display = "none";
+        text2[i].style.display = "block";
+      }
+    }
+  }
+  check();
+  
+  // Script do cadastro /////////////////////////////////////////////////////////////
+
+  function mensagemCadastro() {
+    alert("Você receberá as instruções para finalizar o cadastro no email informado");
+  }
+>>>>>>> 3a63cf8f67cd804041979a605e8303a1655cf673
