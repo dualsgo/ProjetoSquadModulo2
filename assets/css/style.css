@@ -262,45 +262,40 @@ footer {
 FOOTER BASEADO EM ARTIGO EM BLOG - DAQUI PARA CIMA É CONFIGURAÇÃO DO FOOTER
 */
 
-.content {
-  position: relative;
-  background: #fff url(/assets/img/homebg.png) 50% 50%;
-  background-size: contain;
-  background-repeat: no-repeat;
-  flex: 1;
-  text-align: center;
-  padding: 15rem;
-}
-
 .content1,
 .content2,
 .content4 {
   position: relative;
-  background: #fff 50% 50%;
+  background: rgb(1, 135, 168);
+  background: linear-gradient(90deg, rgba(1, 135, 168, 1) 0%, rgba(1, 100, 168, 1) 33%, rgba(1, 135, 167, 1) 90%, rgba(1, 135, 167, 1) 100%);
   background-size: contain;
   background-repeat: no-repeat;
   flex: 1;
   text-align: center;
-  padding: 1rem;
+  padding: 10em 1em 10em 1em;
+  margin: 0 0 5em 0;
+  color: #fff;
 }
 
-.content3 {
-  position: relative;
-  background: #fff url(/assets/img/homebg.png) 50% 50%;
-  background-size: contain;
-  background-repeat: no-repeat;
-  flex: 1;
-  text-align: center;
-  padding: 15rem;
-}
 
+.content,
+.content3,
 .content5 {
   position: relative;
-  background: #fff url(/assets/img/homebg.png) 50% 50%;
+  /*background: #fff url(/assets/img/homebg.png) 50% 50%;
   background-size: contain;
   background-repeat: no-repeat;
+  */
   flex: 1;
   text-align: center;
-  padding: 15rem;
-  margin-top: 50px;
+  padding: 2em;
+  margin: 5em 0 5em 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#imgHome{
+  width: 40em;
 }
