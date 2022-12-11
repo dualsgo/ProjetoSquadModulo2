@@ -1,12 +1,10 @@
 /* MENU BASEADO EM VIDEO AULA */
-
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
 * {
   padding: 0;
   margin: 0;
-  font-family: 'IBM Plex Mono', monospace;
+  font-family: 'Poppins', sans-serif;
 }
 
 header {
@@ -285,10 +283,9 @@ header {
 .tituloSecundario {
   text-align: center;
   padding-bottom: 10px;
-  border-bottom: 2px solid #2fcc71;
+  border-bottom: 2px solid #0187a7;
   max-width: 40%;
-  margin:
-    20px auto;
+  margin: 20px auto;
 }
 
 form {
@@ -380,7 +377,9 @@ LAYOUT BASEADO EM VIDEO AULA - DAQUI PARA BAIXO É CONFIGURAÇÃO DO MAIN
 
 @import url("https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap");
 
-main {margin: 5em;}
+main {
+  margin: 5em;
+}
 
 .container {
   width: 100%;
@@ -389,7 +388,7 @@ main {margin: 5em;}
 .packages {
   margin: 20px;
   width: 300px;
-  padding-bottom: 1.5em;
+  padding: 2em;
   height: 100%;
   background-color: #1e2321;
   display: flex;
@@ -457,7 +456,9 @@ label {
   transform: scale(1.2);
 }
 
-.button1, .button2, .button3 {
+.button1,
+.button2,
+.button3 {
   background-color: #50bfe6;
   box-shadow: 0 0 10px 0 #50bfe6 inset, 0 0 20px 2px #50bfe6;
 }
@@ -503,15 +504,15 @@ label {
   transition: 0.4s;
 }
 
-input:checked + .slider {
+input:checked+.slider {
   background-color: #50bfe6;
 }
 
-input:focus + .slider {
+input:focus+.slider {
   box-shadow: 0 0 1px #50bfe6;
 }
 
-input:checked + .slider:before {
+input:checked+.slider:before {
   -webkit-transform: translateX(26px);
   -ms-transform: translateX(26px);
   transform: translateX(26px);
@@ -531,6 +532,7 @@ input:checked + .slider:before {
   justify-content: center;
   flex-wrap: wrap;
 }
+
 /*
 LAYOUT BASEADO EM VIDEO AULA - DAQUI PARA CIMA É CONFIGURAÇÃO DO MAIN
 */

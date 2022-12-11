@@ -1,12 +1,10 @@
 /* MENU BASEADO EM VIDEO AULA */
-
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
 * {
   padding: 0;
   margin: 0;
-  font-family: 'IBM Plex Mono', monospace;
+  font-family: 'Poppins', sans-serif;
 }
 
 header {
@@ -120,7 +118,10 @@ header {
   .open {
     display: block;
   }
-  main {flex-direction: column;}
+
+  main {
+    flex-direction: column;
+  }
 
 }
 
@@ -253,8 +254,11 @@ header {
 
 }
 
-main {display: flex;
-flex-wrap: wrap; margin: 50px;}
+main {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 50px;
+}
 
 .card {
   z-index: 1;
